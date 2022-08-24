@@ -1,9 +1,6 @@
 import { NextPage } from "next";
 import Link from "@/components/link";
 import Head from "next/head";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/hero";
-import About from "@/components/about";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -14,10 +11,6 @@ const Home: NextPage = function () {
         <Head>
             <title>Carlo D'Ugo</title>
         </Head>
-      {/* <section className="flex w-full grow flex-col justify-center py-10">
-        <p className="text-3xl font-semibold">Home</p>
-        <Link className="text-blue-500 hover:text-blue-700" href="/about">Go to about</Link>
-      </section> */}
       <div className="w-full h-screen text-center">
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
             <div>
