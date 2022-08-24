@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-white tracking-wide font-sans bg-[#121212]
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold 
+    }
+
+    h1 {
+        @apply text-4xl sm:text-5xl md:text-6xl font-bold
+    }
+
+    h2 {
+        @apply text-3xl sm:text-4xl font-bold
+    }
+
+    li {
+        @apply cursor-pointer
+    }
+
+    button {
+        @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4774ca] to-[#8647ca] text-white font-bold
+    }
+}
