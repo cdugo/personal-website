@@ -4,5 +4,8 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: { images: { allowFutureImage: true } }
+  experimental: { images: { allowFutureImage: true } },
+  images: {
+    domains: ['storage.googleapis.com'],
+  },
 };

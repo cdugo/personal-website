@@ -15,7 +15,7 @@ const About: NextPage = function () {
             <div className="max-w-5xl w-full mx-auto p-2">
                 <div>
                     <Image
-                        src="/../public/aboutPic.png"
+                        src="https://storage.googleapis.com/cdugo-website/aboutPic.png"
                         alt="/"
                         height="394"
                         width="420"

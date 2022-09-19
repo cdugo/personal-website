@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#121212]">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-            src="/../public/navPic.png"
+            src="https://storage.googleapis.com/cdugo-website/navPic.png"
             alt="/"
             width="75"
             height="75"
@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-full shadow-xl shadow-[#000000] bg-[#121212] p-10 ease-in duration-300" : "fixed left-[-100%] top-0 p-10 ease-in duration-150"}>
                 <div>
                     <div className="flex w-full items-center justify-between">
-                        <Image src="/../public/navPic.png" width="45" height="45" alt="/"/>
+                        <Image src="https://storage.googleapis.com/cdugo-website/navPic.png" width="45" height="45" alt="/"/>
                         <div onClick={handleNav} className="cursor-pointer">
                             <IoMdClose color='6f32ff' size={23} />
                         </div>
