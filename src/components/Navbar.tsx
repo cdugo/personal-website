@@ -4,14 +4,17 @@ import React, { useState } from 'react'
 import { IoIosMenu, IoMdClose } from 'react-icons/io'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
+import { useRouter } from "next/router";
 const Navbar = () => {
     const [nav, setNav] = useState(false)
 
     const handleNav = () => {
         setNav(!nav)
     }
+
+    const router = useRouter();
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#121212]">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
             src="/../public/navPic.png"
@@ -22,16 +25,13 @@ const Navbar = () => {
             <div>
                 <ul className="hidden md:flex">
                     <Link href="/">
-                        <li className="font-bold ml-10 text-sm hover:border-b">Home</li>
+                        <li className={router.pathname === "/" ? "font-bold ml-10 text-sm underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "font-bold ml-10 text-sm hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Home</li>
                     </Link>
                     <Link href="/about">
-                        <li className="font-bold ml-10 text-sm hover:border-b">About</li>
+                        <li className={router.pathname === "/about" ? "font-bold ml-10 text-sm underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "font-bold ml-10 text-sm hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>About</li>
                     </Link>
-                    <Link href="/">
-                        <li className="font-bold ml-10 text-sm hover:border-b">Journey</li>
-                    </Link>
-                    <Link href="/">
-                        <li className="font-bold ml-10 text-sm hover:border-b">Contact</li>
+                    <Link href="/journey">
+                        <li className={router.pathname === "/journey" ? "font-bold ml-10 text-sm underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "font-bold ml-10 text-sm hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Journey</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden cursor-pointer'>
@@ -56,17 +56,15 @@ const Navbar = () => {
                 <div className="py-4 flex flex-col h-full">
                     <ul className="grow">
                         <Link href="/">
-                            <li className="font-bold py-4 text-md">Home</li>
+                            <li className={router.pathname === "/" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "font-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Home</li>
                         </Link>
                         <Link href="/about">
-                            <li className="font-bold py-4 text-md">About</li>
+                            <li className={router.pathname === "/about" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "ont-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>About</li>
                         </Link>
-                        <Link href="/">
-                            <li className="font-bold py-4 text-md">Journey</li>
+                        <Link href="/journey">
+                            <li className={router.pathname === "/journey" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "ont-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Journey</li>
                         </Link>
-                        <Link href="/">
-                            <li className="font-bold py-4 text-md">Contact</li>
-                        </Link>
+                       
                     </ul>
                     
                     <div>

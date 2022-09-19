@@ -1,0 +1,39 @@
+{
+    "items": [{
+        "title": "July 2020",
+        "cardTitle": "Vasto Studios",
+        "cardSubtitle": "Founder & Tech Lead",
+        "cardDetailedText": "When I first learned about backend development, I fell in love with building software. At the time I was very involved within the sneaker reselling community, I noticed that there was a lucrative market in companies that sold proxy IPs to users that used software to automate purchases of exclusive sneakers that sold out quickly. These proxy IPs were used to mask the home IP of the software user allowing them to purchase multiple pairs of the same sneaker upon release. I noticed there was a large barrier of entry for companies to enter the market, so I wanted to offer a low-cost customizable solution to enable new companies to have their own web design, admin platform, and Stripe payment processing integration on one site. This was my first experience as a full-stack engineer and I was able to utilize Express.JS to build out the backend along with MongoDB to store user, order, and stock data. As this was my first experience starting my own company, I also had the opportunity to learn how to operate a business. From tracking revenue and expenses, customer acquisition, customer relationship management, talent acquisition, and project management, I had exposure to a lot crucial responsibilities that created a foundation for my future as a founder."
+    },{
+        "title": "September 2020",
+        "cardTitle": "Vasto Software",
+        "cardSubtitle": "Co-Founder & CTO",
+        "cardDetailedText": "Since the birth of my aspirations to become a programmer, I always wanted to develop a “sneaker bot” - software that automated purchases of exclusive sneakers that sold out quickly. A significant requirement of developing this software, however, is extensive knowledge in reverse engineering the e-commerce sites that sell the lucrative sneakers. I fortunately met my friend and co-founder who understood how to find holes in websites’ bot protection, but lacked fundamentals of software development. Due to my past experiences of building software alongside learning object oriented programming in classes, we made a great team. I was not only able to build out our entire infrastructure, I was also able to make his purchasing scripts more efficient."
+    },{
+        "title": "October 2020",
+        "cardTitle": "Picstop",
+        "cardSubtitle": "Co-Founder & CTO",
+        "cardDetailedText": "Picstop was my first true startup experience. It was a social media app centered around finding and sharing hidden gems when traveling to new places, allowing users to show off their travels on a scrapbook-like customizable profile. Besides gaining a tremendous amount of hard skill experience building Picstop, the most memorable takeaway was the mindset I had during our development phase. I have never become fully incapsulated by something to that extent before.  Upon waking up, I would think about Picstop and how to improve it. While going to sleep, I would write down bug fixes or improvements to remember the next morning. I even have dreamt of new features and milestones with Picstop. Although I had to learn what startup failure felt like, I am extremely grateful to have had this experience because it showed me what I am truly passionate about - building projects with a customer-first mindset."
+    },{
+        "title": "July 2021",
+        "cardTitle": "Lyra Robotics",
+        "cardSubtitle": "Backend Software Engineer",
+        "cardDetailedText": "As a part-time Backend Software Engineer at Lyra Robotics, a sneaker bot software company, I got incredible exposure to a large codebase using industry standard backend technologies. This was one of my first projects in which I joined when there was a significant amount of code already in the codebase rather than building out the boilerplate. I had to learn how to read another person’s code to make improvements and bug fixes for it. This was a very important skill that I have been refining ever since my initial exposure. At Lyra, we utilized a microservice architecture and web sockets to allow the services to communicate with each other. I was also able to own the e-commerce release method project, an attempt to give an equal chance to all customers visiting the site in hopes to purchase the software. Since it was a lucrative software, I decided to implement a randomly drawn queue service using Redis to give all users an equal chance, removing the advantage from customers using automated software."
+    },{
+        "title": "January 2022",
+        "cardTitle": "Moderna Therapeutics",
+        "cardSubtitle": "Software Engineer Co-op",
+        "cardDetailedText": "Moderna was my first experience working at a larger company, meaning I shifted my objective into mostly learning over providing value to the company. I did not have a deep understanding or knowledge of biology, but I was excited to learn how to communicate with customers in different fields and industries and translate desires into code. After about a month, my manager noted that I took on the role of a full time software engineer, which was very honoring to hear. I learned many industry standards in both technical and behavioral aspects, from writing modular code to minimize scientist labor time using automation and optimization. I also learned how to ask effective questions to customers when they are discussing a new feature they want, especially when they don’t have experience in software. After my amazing time at Moderna, I was able to realize that fundamental software engineering skills are transferrable to any industry as long as you are able to communicate clearly and effectively to anyone."
+    },{
+        "title": "June 2022",
+        "cardTitle": "Chronos Capital Group",
+        "cardSubtitle": "Lead Software Engineer",
+        "cardDetailedText": "My realization that software skills are applicable to different industries gave me an itch to begin exploring. When I talked to my co-founder, Nick, about the project initially, I was inclined to almost blindly say yes because I wanted to be try out different sectors, and Financial Technologies was at the top of my list. Nick found an incredible trading strategy but needed a partner to backtest the strategy and write the algorithm. I have never done either of these things, so I spent a significant amount of time doing due diligence about the industry standards of how to go about doing them.  I knew I had to brush up on my Python, but also learn about how to interact with a brokerage platform. Luckily I have had plenty of experience integrating external API’s, so using Polygon’s API to get stock data was quite simple. However, I experienced lots of trouble when initially writing the logic to connect to IBKR, the brokerage platform we used. It was heavily based on web sockets and event subscription, something that I did not fully grasp on a high level at Lyra Robotics. After spending lots of time struggling, I began to get a deeper understanding of how IBKR works, and we have recently hosted our code to do live paper trading before we start trading with real accounts!"
+    },
+    {
+        "title": "September 2022",
+        "cardTitle": "Harvard Medical School",
+        "cardSubtitle": "Mobile App Developer Research Assisstant",
+        "cardDetailedText": "In theme of exploring out of my comfort zone, I recently joined a research team affiliated with Cornell University developing a mobile app that enables patients to sketch their nerve pain caused by migraines to determine if they will be fit for surgery. The algorithm that decides if surgery will go well uses machine learning to output scores relating to the surgery, triaging patients to the right practitioner for treatment."
+    }]
+}
