@@ -19,8 +19,8 @@ const Navbar = () => {
         <Image
             src="https://storage.googleapis.com/cdugo-website/navPic.png"
             alt="/"
-            width="75"
-            height="75"
+            width="64"
+            height="64"
         />
             <div>
                 <ul className="hidden md:flex">
@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70" : ''}>
-            <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-full shadow-xl shadow-[#000000] bg-[#121212] p-10 ease-in duration-300" : "fixed left-[-100%] top-0 p-10 ease-in duration-150"}>
+            <div className={nav ? "h-full flex flex-col fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-full shadow-xl shadow-[#000000] bg-[#121212] p-10 ease-in duration-300" : "fixed left-[-100%] top-0 p-10 ease-in duration-150"}>
                 <div>
                     <div className="flex w-full items-center justify-between">
                         <Image src="https://storage.googleapis.com/cdugo-website/navPic.png" width="45" height="45" alt="/"/>
@@ -53,16 +53,16 @@ const Navbar = () => {
                         <p className="w-[85%] md:w-[90%] py-4">Student Software Engineer & Entrepreneur</p> 
                     </div>
                 </div>
-                <div className="py-4 flex flex-col h-full">
-                    <ul className="grow">
+                <div className="py-4 flex flex-col grow">
+                    <ul  className="grow">
                         <Link href="/">
-                            <li className={router.pathname === "/" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "font-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Home</li>
+                            <li onClick={handleNav} className={router.pathname === "/" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "font-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Home</li>
                         </Link>
                         <Link href="/about">
-                            <li className={router.pathname === "/about" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "ont-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>About</li>
+                            <li onClick={handleNav} className={router.pathname === "/about" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "ont-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>About</li>
                         </Link>
                         <Link href="/journey">
-                            <li className={router.pathname === "/journey" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "ont-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Journey</li>
+                            <li onClick={handleNav} className={router.pathname === "/journey" ? "font-bold py-4 w-[33%] text-md underline decoration-[#6f32ff] decoration-2 underline-offset-4 hover:decoration-4 cursor-pointer" : "ont-bold py-4 w-[33%] text-md hover:underline decoration-[#6f32ff] decoration-2 underline-offset-4 cursor-pointer"}>Journey</li>
                         </Link>
                        
                     </ul>
@@ -70,15 +70,15 @@ const Navbar = () => {
                     <div>
                         <p className="tracking-wideset text-center">Connect with me</p>
                         <div className="flex items-center justify-between my-5 w-full">
-                            <div className="rounded-full p-3 cursor-pointer hover:bg-[#6f32ff] ease-in duration-100">
+                            <a href="https://linkedin.com/in/carlo-dugo" className="rounded-full p-3 cursor-pointer hover:bg-[#6f32ff] ease-in duration-100">
                                 <FaLinkedin />
-                            </div>
-                            <div className="rounded-full  p-3 cursor-pointer hover:bg-[#6f32ff] ease-in duration-100">
+                            </a>
+                            <a href="https://github.com/cdugo" className="rounded-full  p-3 cursor-pointer hover:bg-[#6f32ff] ease-in duration-100">
                                 <FaGithub />
-                            </div>
-                            <div className="rounded-full  p-3 cursor-pointer hover:bg-[#6f32ff] ease-in duration-100">
+                            </a>
+                            <a href="mailto:dugo.c@northeastern.edu" className="rounded-full  p-3 cursor-pointer hover:bg-[#6f32ff] ease-in duration-100">
                                 <AiOutlineMail />
-                            </div>
+                            </a>
                         </div>
                         
                     </div>

@@ -1,8 +1,7 @@
 import { NextPage } from "next";
 import { Chrono } from "react-chrono";
 import ReadMore from "@/components/ReadMore";
-import Image from 'next/future/image'
-import Link from "@/components/link";
+import {isMobile} from 'react-device-detect';
 import { useState } from "react";
 import info from "../../public/info.json"
 
@@ -11,7 +10,7 @@ const Journey: NextPage = function () {
     const titles = items.map(item => { return { title: item.title }});
 
     const [isOpen, setIsOpen] = useState(false)
-
+    const mode = isMobile ? "HORIZONTAL" : "VERTICAL_ALTERNATING"
     return (
         <div className="w-full h-full">
             <div className="w-[75%] justif-center m-auto">
@@ -19,7 +18,7 @@ const Journey: NextPage = function () {
                     <h2 className="max-w-[1240px] pt-36 pb-12 m-auto flex justify-center items-center">My Journey</h2>
                 </div>
                 
-                <Chrono mode="VERTICAL_ALTERNATING" items={titles} theme={{
+                <Chrono mode={mode} items={titles} theme={{
                         primary: '#6f32ff',
                         secondary: '#121212',
                         cardBgColor: '#1B1B1B',
